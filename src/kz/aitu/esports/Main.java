@@ -16,7 +16,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println(
-                "Choose game: CS2 / Valorant / Apex"
+                "Choose game: CS2 / Valorant / Apex / R6"
         );
 
         String game = scanner.nextLine();

@@ -2,6 +2,7 @@ package kz.aitu.esports.factory;
 
 import kz.aitu.esports.family.apex.ApexFactory;
 import kz.aitu.esports.family.cs2.CS2Factory;
+import kz.aitu.esports.family.r6.R6Factory;
 import kz.aitu.esports.family.valorant.ValorantFactory;
 
 public class FactoryProvider {
@@ -18,6 +19,9 @@ public class FactoryProvider {
 
             case "apex" ->
                     new ApexFactory();
+
+            case "r6", "rainbow six" ->
+                    new R6Factory();
 
             default ->
                     throw new IllegalArgumentException(
